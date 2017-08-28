@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,6 +9,7 @@
     <style>
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; }
+        sidebar{position:fixed; left:80%; padding:1%; text-align:left;}
     </style>
 </head>
 <body>
@@ -19,10 +19,15 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoibWlyYWdlbW9vbiIsImEiOiJjajYxcnMweWEweTF3MnFvZnlsZDNwNzA2In0.jjtMxLlr2fmKzI8QT8Bqjw';
 var map = new mapboxgl.Map({
     container: 'map', // container id
-    style: 'mapbox://styles/mapbox/streets-v9', // stylesheet location
-    center: [-74.50, 40], // starting position [lng, lat]
+    style: 'mapbox://styles/miragemoon/cj6vnazz244sd2rmwggxbwymv', // stylesheet location
+    center: [151.2093, -33.8688], // starting position [lng, lat]
     zoom: 9 // starting zoom
 });
 </script>
+
+<sidebar>
+<h1>Title of map</h1>
+Map
+</sidebar>
 
 </body>
